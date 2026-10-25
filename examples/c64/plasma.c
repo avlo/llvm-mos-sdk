@@ -16,6 +16,9 @@
 #include <peekpoke.h>
 #include <stdint.h>
 #include <stdio.h>
+#include "c64.inc"
+#include "_vic2.h"
+#include "_sid.h"
 
 enum {
   SCREEN = 0x0400,
@@ -127,3 +130,4 @@ int main(void) {
     do_plasma((uint8_t *)SCREEN);
   }
 }
+

@@ -16,6 +16,8 @@
 #include <c64.h>
 #include <cstdint>
 #include <peekpoke.h>
+#include "c64.inc"
+#include "_vic2.h"
 
 constexpr uint16_t DEFAULT_SCREEN = 0x0400;
 constexpr uint16_t CHARSET = 0x2000;
@@ -69,6 +71,9 @@ public:
 /*
  * Generate charset with 8 * 256 characters at given address
  */
+
+#include "c64.inc"
+
 void make_charset(const uint16_t charset_address, RandomXORS &rng) {
   // Lambda function to generate a single 8x8 pixels pattern
   auto make_char = [&](const uint8_t sine) {
@@ -165,3 +170,5 @@ auto main() -> int {
     plasma.update();
   }
 }
+
+#include "c64.inc"
