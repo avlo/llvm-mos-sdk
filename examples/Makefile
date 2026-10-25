@@ -11,4 +11,4 @@ hello-printf.prg: hello-printf.c
 	$(MOS_CC) -Os -o $@ $<
 
 clean:
-	rm -f hello-printf.prg
+	rm -f *.prg *.prg.elf

@@ -11,4 +11,4 @@ plasma.prg: plasma.c
 	$(MOS_CC) -Os -o $@ $<
 
 clean:
-	rm -f plasma.prg
+	rm -f *.prg *.prg.elf

@@ -6,4 +6,10 @@ build*
 *~
 *.rej
 
+examples/*.prg
+examples/*.prg.elf
+
+examples/c64/*.prg
+examples/c64/*.prg.elf
+
 examples/.idea
